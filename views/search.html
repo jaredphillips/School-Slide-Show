@@ -1,0 +1,23 @@
+Search form goes here
+
+<input type="text" placeholder="Enter your query here" ng-model="searchOptions.query">
+<button class="btn" ng-click="newSearch()">Search Movies</button>
+<span ng-show="movies">
+  <button class="btn" ng-click="prevPage()">&lt;</button>
+  <span>{{searchOptions.page}}</span>
+  <button class="btn" ng-click="nextPage()">&gt;</button>
+</span>
+<hr/>
+<div class="loader alert" ng-show="isLoading">Loading ...</div>
+<div ng-show="movies">
+  {{total}} Results found. 
+</div>
+<ul class="thumbnails" ng-hide="isLoading || !movies">
+  <li class="span4" ng-repeat="movie in movies">
+    <div class="thumbnail">
+      <img ng-src="{{movie.posters.detailed}}" style="max-height:200px">
+      <h3>{{ movie.title }}</h3>
+      <p>{{ movie.synopsis }}</p>
+    </div>
+  </li>
+</ul>
