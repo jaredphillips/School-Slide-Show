@@ -1,10 +1,5 @@
-/*
-	Created by Kaspars Dambis
-	http://konstruktors.com
-*/
-
-var metrogram = angular.module(
-		'metrogram', []
+var slideshow = angular.module(
+		'slideshow', []
 	).config(
 		['$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ) {
 			$routeProvider.when('/tag/:tag');
