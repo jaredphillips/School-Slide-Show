@@ -1,10 +1,10 @@
 body { 
-	font: 18px/1.2 sans-serif; 
+  background: #14ACDE;
+  font-family: 'Scada', sans-serif;
 	margin: 0 auto; 
 	padding: 0; 
 	height: 100%; 
 	width: 100%; 
-	background: url('bcg.png'); 
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5); 
 }
 
@@ -20,8 +20,8 @@ cite {
 	font-weight: bold; 
 }
 
-h1 { 
-	text-align: center; 
+.username { 
+	text-align: left; 
 	margin: 0; 
 	padding: 0.4em 0; 
 	width: 60%; 
@@ -29,23 +29,17 @@ h1 {
 	text-shadow:0 -1px 0 #333; 
 }
 
-h1 input { 
-	text-shadow: 0 -1px 0 #333; 
-	margin: 0; 
-	padding: 0; 
-	border-radius:0.1em; 
-}
-
-h1:hover input { 
-	background: rgba(0,0,0,0.1); 
-}
-
-h1 img { 
-	vertical-align: middle; 
-}
 
 img { 
 	border-radius: 0.2em; 
+}
+
+.avatar {
+	border-radius: 60px;
+}
+
+.heart {
+	color: red;
 }
 
 input { 
