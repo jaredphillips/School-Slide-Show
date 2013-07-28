@@ -8,6 +8,10 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5); 
 }
 
+.information-container {
+
+}
+
 ul, li { 
 	margin: 0; 
 	padding: 0; 
@@ -110,24 +114,10 @@ input {
 
 .meta { 
 	height: 0; 
-	margin-left: 64%; 
+	margin-left: 59%; 
 	width: 35%; 
 	position: relative; 
 	z-index:10; 
 }
 
-.meta cite { 
-	display: block; 
-}
 
-.comments { 
-	margin-left: 1em; 
-}
-
-.comment { 
-	display: block; 
-	clear: both; 
-	min-height: 2.5em; 
-	padding: 0 2em 1em; 
-	margin: 0; 
-}
