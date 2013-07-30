@@ -8,10 +8,6 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5); 
 }
 
-.information-container {
-
-}
-
 ul, li { 
 	margin: 0; 
 	padding: 0; 
@@ -62,7 +58,7 @@ input {
 #slides { 
 	width: 100%; 
 	position: absolute; 
-	top: 4em; 
+	top: 1em; 
 	bottom: 0; 
 	overflow: hidden; 
 	-webkit-transition: all 0.5s; 
@@ -114,8 +110,8 @@ input {
 
 .meta { 
 	height: 0; 
-	margin-left: 59%; 
-	width: 35%; 
+	margin-left: 57%; 
+	width: 40%; 
 	position: relative; 
 	z-index:10; 
 }

@@ -1,6 +1,4 @@
-var slideshow = angular.module(
-		'slideshow', []
-	).config(
+var slideshow = angular.module('slideshow', []).config(
 		['$routeProvider', '$locationProvider', function( $routeProvider, $locationProvider ) {
 			$routeProvider.when('/tag/:tag');
 		}]
@@ -60,7 +58,7 @@ var slideshow = angular.module(
 					$scope.images.push( $scope.images.shift() );
 				*/
 
-				$timeout( $scope.advanceSlide, 6000 );
+				$timeout( $scope.advanceSlide, 4000 );
 			}
 
 			// Advance slides

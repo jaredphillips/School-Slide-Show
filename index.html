@@ -5,12 +5,12 @@
   <link rel="shortcut icon" href="http://bitmakerlabs.com/assets/favicon-b5b84e226d653cd216a1a68fc64beeef.ico">
   <meta charset="utf-8" />
   <title>Bitmaker Labs</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/angular.min.js"></script>
   <script src="assets/slideshow.js"></script>
 </head>
 <body ng-controller="slideshow" ng-class="loadingClass">
-  <img src="assets/bitmaker.jpeg" width="100" height="100">
+  <img src="assets/bitmaker.jpeg" width="120" height="120">
   
   <ul id="slides">
     <li ng-repeat="image in images" class="slide" ng-class="{ active : image.isActive }">
