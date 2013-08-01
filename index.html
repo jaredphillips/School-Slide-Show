@@ -3,22 +3,27 @@
 <head>
   <link href='http://fonts.googleapis.com/css?family=Scada:700italic,400' rel='stylesheet' type='text/css'>
   <link rel="shortcut icon" href="http://bitmakerlabs.com/assets/favicon-b5b84e226d653cd216a1a68fc64beeef.ico">
-  <meta charset="utf-8" />
   <title>Bitmaker Labs</title>
   <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/angular.min.js"></script>
   <script src="assets/slideshow.js"></script>
 </head>
 <body ng-controller="slideshow" ng-class="loadingClass">
-  <img src="assets/bitmaker.jpeg" width="120" height="120">
   
+  <!-- Bitmaker logo in the top left hand corner -->
+  <img src="assets/bitmaker.jpeg" class="bitmaker-logo">
+  
+  <!-- Here come the slides -->
   <ul id="slides">
     <li ng-repeat="image in images" class="slide" ng-class="{ active : image.isActive }">
-      
+
+      <!-- figure div is used for capturing flow content -->
       <figure>
+        <!-- image render -->
         <img ng-src="{{ image.images.standard_resolution.url }}" class="image" />
       </figure>
 
+      <!-- Right hand side displays information about photo (user, comments, likes, etc) -->
       <div class="information-container">
         <div class="meta">
           <p class="caption">

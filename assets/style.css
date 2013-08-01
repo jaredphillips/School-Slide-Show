@@ -8,6 +8,13 @@ body {
 	text-shadow: 0 1px 0 rgba(255,255,255,0.5); 
 }
 
+.bitmaker-logo {
+ 	width: 120px;
+ 	height: 120px;
+ }
+
+/* Styling for right hand column */
+
 ul, li { 
 	margin: 0; 
 	padding: 0; 
@@ -15,10 +22,7 @@ ul, li {
 	display: block; 
 }
 
-cite { 
-	font-style: normal; 
-	font-weight: bold; 
-}
+
 
 .username { 
 	text-align: left; 
@@ -38,30 +42,9 @@ img {
 	border-radius: 60px;
 }
 
+/* Makes the heart red */
 .heart {
 	color: red;
-}
-
-input { 
-	color: inherit; 
-	font: inherit; 
-	border: none; 
-	background: transparent; 
-	outline: none; 
-}
-
-.loading { 
-	opacity: 0.5; 
-	-webkit-transition: all 0.5s; 
-}
-
-#slides { 
-	width: 100%; 
-	position: absolute; 
-	top: 1em; 
-	bottom: 0; 
-	overflow: hidden; 
-	-webkit-transition: all 0.5s; 
 }
 
 .slide { 
@@ -79,6 +62,7 @@ input {
 	opacity: 1; 
 	-webkit-transform: translate3d(0,0,0); 
 }
+
 
 .slide figure { 
 	position: absolute; 
