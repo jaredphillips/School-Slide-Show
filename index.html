@@ -2,7 +2,7 @@
 <html ng-app="slideshow">
 <head>
   <link href='http://fonts.googleapis.com/css?family=Scada:700italic,400' rel='stylesheet' type='text/css'>
-  <link rel="shortcut icon" href="http://bitmakerlabs.com/assets/favicon-b5b84e226d653cd216a1a68fc64beeef.ico">
+  <link rel="shortcut icon" href="assets/small.ico">
   <title>Bitmaker Labs</title>
   <link rel="stylesheet" href="assets/style.css" />
   <script src="assets/angular.min.js"></script>
@@ -17,37 +17,37 @@
   <ul id="slides">
     <li ng-repeat="image in images" class="slide" ng-class="{ active : image.isActive }">
 
-      <!-- figure div is used for capturing flow content -->
+      <!-- figure div is used for capturing flow content semantic HTML5 markup-->
       <figure>
         <!-- image render -->
         <img ng-src="{{ image.images.standard_resolution.url }}" class="image" />
       </figure>
 
-      <!-- Right hand side displays information about photo (user, comments, likes, etc) -->
-      <div class="information-container">
-        <div class="meta">
-          <p class="caption">
+    <!-- Right hand side displays information about photo (user, comments, likes, etc) -->
+      <div class="right-hand-side">
+        <p class="caption">
+          <cite class="author">
+            <div class="user-image">
+              <img ng-src="{{ image.user.profile_picture }}" class="avatar" width="120" height="120" />
+            </div>
+            <h1 class="username">{{ image.user.username }}</h1>
+          </cite>
+            {{ image.caption.text }}
+        </p>
+
+        <p class="likes">
+         <span class="heart">&hearts;</span> {{ image.likes.count }} likes
+        </p>
+
+        <ul class="comments">
+          <li class="comment" ng-repeat="comment in image.comments.data">
             <cite class="author">
-              <div class="user-image">
-                <img ng-src="{{ image.user.profile_picture }}" class="avatar" width="120" height="120" />
-              </div>
-              <h1 class="username">{{ image.user.username }}</h1>
-            </cite>
-              {{ image.caption.text }}
-          </p>
-          <p class="likes">
-           <span class="heart">&hearts;</span> {{ image.likes.count }} likes
-          </p>
-          <ul class="comments">
-            <li class="comment" ng-repeat="comment in image.comments.data">
-              <cite class="author">
-                <img ng-src="{{ comment.from.profile_picture }}" class="avatar" width="40" height="40" /> 
-                <h3 class="username">{{ comment.from.username }}</h3>
-              </cite> 
-              {{ comment.text }}
-            </li>
-          </ul>
-        </div>
+              <img ng-src="{{ comment.from.profile_picture }}" class="avatar" width="40" height="40" /> 
+              <h3 class="username">{{ comment.from.username }}</h3>
+            </cite> 
+            {{ comment.text }}
+          </li>
+        </ul>
       </div>
     </li>  
   </ul>
