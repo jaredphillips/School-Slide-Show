@@ -10,7 +10,7 @@ slideshow.controller(
 		'slideshow', function ( $scope, $http, $timeout, $route ) {
 
 			// set the api url
-			var url = 'https://api.instagram.com/v1/tags/bitmakerlabs/media/recent?access_token=257058201.9af4692.3d68e63b114944a0be332da732923a23&callback=JSON_CALLBACK',
+			var url = 'https://api.instagram.com/v1/tags/ladieslearningcode/media/recent?access_token=257058201.9af4692.3d68e63b114944a0be332da732923a23&callback=JSON_CALLBACK',
 				newReq, refreshApi;
 
 			$scope.fetchImages = function() {
