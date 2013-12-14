@@ -53,7 +53,7 @@ slideshow.controller(
 				if ( angular.isDefined( $scope.images ) && $scope.images.length )
 					$scope.makeActiveSlide( $scope.imgCurrent + 1 );
       // Set time for advancing slide
-				$timeout( $scope.advanceSlide, 4000 );
+				$timeout( $scope.advanceSlide, 7000 );
 			}
 
 			// Advance slides
